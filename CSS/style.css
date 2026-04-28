@@ -1,0 +1,29 @@
+.navbar_bg_color {
+    background: #000046;
+    background: -webkit-linear-gradient(to right, #1CB5E0, #000046);
+    background: linear-gradient(to right, #1CB5E0, #000046);
+}
+.card_icon{
+    font-size: 2rem;
+    color: white;
+}
+.image_brightness{
+   filter: brightness(55%) hue-rotate(200deg);
+}
+.font_size{
+    font-size: 2rem;
+    font-weight: 500;
+}
+.scrollspy-example {
+      height: 400px;        /* REQUIRED for scroll */
+      overflow-y: auto;     /* ENABLE scroll */
+      position: relative;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    .list-group-item.active {
+      background-color: #0d6efd;
+      border-color: #0d6efd;
+    }

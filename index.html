@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bootstrap demo</title>
+  <!-- Bootstart CSS CDN Link  Start -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+  <!-- Bootstart CSS CDN Link  Stop -->
+  <!-- Font CDN Link  Start -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Font CDN Link  End -->
+  <!-- Internal CSS Link Start  -->
+  <link rel="stylesheet" href="/CSS/style.css">
+  <!-- Internal CSS Link Stop  -->
+</head>
+
+<body>
+  <!-- Navbar start here  -->
+  <div class="container-fluid navbar_bg_color">
+    <div class="container py-3">
+      <div class="row ">
+        <div class="col-lg-2">
+          <p class="text-light fs-3 m-0">AIIM</p>
+        </div>
+        <div class="col-lg-10 d-flex justify-content-end align-items-center">
+          <p class="px-4 m-0"><a href="#" class="text-decoration-none text-light">Home</a></p>
+          <p class="px-4 m-0"><a href="#" class="text-decoration-none text-light">About</a></p>
+          <p class="px-4 m-0 dropdown dropdown-toggle text-light position-relative" data-bs-toggle="dropdown"
+            title="click">Courses
+          <div class="dropdown-menu position-absolute top-0">
+            <a class="dropdown-item" href="#">Animation</a>
+            <a class="dropdown-item" href="#">Web Development</a>
+            <a class="dropdown-item" href="#">Python Programming</a>
+            <a class="dropdown-item" href="#">Graphics Design</a>
+            <a class="dropdown-item" href="#">Desktop Publishing</a>
+            <a class="dropdown-item" href="#">Basic Computer</a>
+          </div>
+          </p>
+          <p class="px-4 m-0"><a href="#" class="text-decoration-none text-light">Portal</a></p>
+          <p class="px-4 m-0"><a href="#" class="text-decoration-none text-light">Contact</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Navbar End Here  -->
+
+  <!-- Carousel part start here  -->
+  <div class="carousel slide" id="myslider" data-bs-ride="carousel">
+    <!-- Carousel indicators start here  -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myslider" data-bs-slide-to="0" class="active" aria-current="true"
+        aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myslider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myslider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#myslider" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#myslider" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    </div>
+    <!-- Carousel indicators stop here  -->
+
+    <!-- Carousel inner part start here  -->
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="./Assets/Images/Advance-Excel-Hero-Banner.png" class="d-block w-100 image_brightness" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Advance Excel</h5>
+          <p>Advanced Excel uses tools like Pivot Tables, formulas, and macros to analyze and<br> automate data.
+            It helps in reporting, data visualization, and decision-making.</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="./Assets/Images/Financial-Accounting-Hero-Banner.png" class="d-block w-100 image_brightness"
+          alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Financial Accounting</h5>
+          <p>Deals with recording and managing financial transactions of a business.
+            Helps <br>in preparing reports and ensuring financial accuracy.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./Assets/Images/Graphic-Design-Hero-B.png" class="d-block w-100 image_brightness" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Graphics Design</h5>
+          <p>Creates visual content like logos, posters, and social media designs.
+            <br> Uses tools and creativity to communicate ideas visually.
+          </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./Assets/Images/Hardware-Networking-Hero-Banner.png" class="d-block w-100 image_brightness" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Hardware and Networking</h5>
+          <p>Covers computer components and how devices connect to share data.
+            Includes <br>networking concepts like IP, routers, and system troubleshooting.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./Assets/Images/Web-Development-Hero-Banner.png" class="d-block w-100 image_brightness" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Web Development</h5>
+          <p>Involves building websites using HTML, CSS, JavaScript, and backend technologies.
+            Focuses<br> on creating interactive and functional web applications.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Carousel inner part stop here  -->
+
+    <!-- Carousel next and previous button start here  -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#myslider" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+      <span class="visually-hidden text-black">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myslider" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+    <!-- Carousel next and previous button start here  -->
+  </div>
+  <!-- Carousel part start here  -->
+
+  <!-- Our Vision and Misson start here  -->
+  <div class="container-fluid navbar_bg_color  pt-5">
+    <div class="container">
+      <div class="row pt-4 pb-4">
+        <div class="col-lg-12 ">
+          <h1 class="text-light">About AIIM Computer Training Institute </h1>
+          <p class="text-light">AIIM Computer Training Institute is a leading center for professional computer education
+            and skill
+            development.<br>We specialize in Animation, Graphics Design, Web Development, and Hardware & Networking
+            courses.
+            Our programs focus on practical training,<br> modern tools, and industry-relevant skills.
+            We provide expert guidance and personalized support to make students job-ready.<br>
+            Join AIIM to build a successful career in today’s digital world.</p>
+        </div>
+      </div>
+      <div class="row py-4 ">
+        <div class="col-lg-3">
+          <p class="text-center"><i class="fa-solid fa-graduation-cap card_icon"></i></p>
+          <p class="text-center text-light font_size">Our Vission</p>
+          <p class="text-center text-light">To be a leading computer training institute known for quality education and
+            innovation.
+            We aim to empower students with practical skills for a successful career in technology.</p>
+        </div>
+        <div class="col-lg-3">
+          <p class="text-center"><i class="fa-solid fa-graduation-cap card_icon"></i></p>
+          <p class="text-center text-light font_size">Our Mission</p>
+          <p class="text-center text-light">To deliver industry-oriented training with hands-on experience and expert
+            guidance.
+            We focus on building strong technical foundations and improving employability.</p>
+        </div>
+        <div class="col-lg-3">
+          <p class="text-center"><i class="fa-solid fa-graduation-cap card_icon"></i></p>
+          <p class="text-center text-light font_size">Our Strength</p>
+          <p class="text-center text-light">Our strength lies in experienced faculty, practical learning, and updated
+            curriculum.
+            We emphasize real-world projects, personalized support, and student success.</p>
+        </div>
+        <div class="col-lg-3">
+          <p class="text-center"><i class="fa-solid fa-graduation-cap card_icon"></i></p>
+          <p class="text-center text-light font_size">Our Quality</p>
+          <p class="text-center text-light">We maintain high standards of training using modern tools and teaching
+            methods.
+            Our commitment ensures consistent quality, excellence, and student satisfaction.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Our Vision and Misson stop here  -->
+
+  <!-- Our Popular Courses start Here  -->
+  <div class="container-fluid mt-4">
+    <div class="container">
+      <div class="row">
+
+        <!-- LEFT MENU -->
+        <div class="col-4">
+          <div id="Popular_Courses" class="list-group">
+            <a class="list-group-item list-group-item-action" href="#web-development">Web Development</a>
+            <a class="list-group-item list-group-item-action" href="#graphics-design">Graphics Design</a>
+            <a class="list-group-item list-group-item-action" href="#animation">Animation</a>
+            <a class="list-group-item list-group-item-action" href="#hardware-networking">Hardware & Networking</a>
+            <a class="list-group-item list-group-item-action" href="#excel">Advance Excel</a>
+            <a class="list-group-item list-group-item-action" href="#tally">Tally | GST </a>
+            <a class="list-group-item list-group-item-action" href="#python">Python Programming</a>
+          </div>
+        </div>
+
+        <!-- RIGHT CONTENT -->
+        <div class="col-8">
+          <div data-bs-spy="scroll" data-bs-target="#Popular_Courses" data-bs-smooth-scroll="true"
+            class="scrollspy-example" tabindex="0">
+
+            <h4 id="web-development">Web Development</h4>
+            <p>
+              Web Development is the process of creating and maintaining websites and web applications.
+              It includes front-end design using HTML, CSS, and JavaScript, and back-end development with server-side
+              technologies.
+              The goal is to build responsive, user-friendly, and functional websites.
+              <a href="#">
+                <img
+                  src="https://static.vecteezy.com/system/resources/thumbnails/072/929/774/small/a-finger-touches-a-digital-screen-displaying-a-web-development-interface-with-icons-representing-coding-cloud-computing-database-and-website-design-symbolizing-innovation-and-technological-advancement-photo.jpg"
+                  alt="">
+              </a>
+            </p>
+
+            <h4 id="graphics-design">Graphics Design</h4>
+            <p>
+              Graphics Design is the art of creating visual content to communicate ideas effectively.
+              It includes logos, posters, and branding materials using modern tools.
+            </p>
+
+            <h4 id="animation">Animation</h4>
+            <p>
+              Animation involves creating motion graphics, videos, and visual effects.
+              It is widely used in films, advertising, and digital media.
+            </p>
+
+            <h4 id="hardware-networking">Hardware & Networking</h4>
+            <p>
+              Covers computer hardware, networking concepts, and system management.
+              Includes routers, IP addressing, and troubleshooting.
+
+            </p>
+
+            <h4 id="excel">Advance Excel</h4>
+            <p>
+              Covers computer hardware, networking concepts, and system management.
+              Includes routers, IP addressing, and troubleshooting.
+            </p>
+
+            <h4 id="tally">Tally | GST </h4>
+            <p>
+              Covers computer hardware, networking concepts, and system management.
+              Includes routers, IP addressing, and troubleshooting.
+            </p>
+            <h4 id="python">Python Programmimg</h4>
+            <p>
+              Covers computer hardware, networking concepts, and system management.
+              Includes routers, IP addressing, and troubleshooting.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</html>
