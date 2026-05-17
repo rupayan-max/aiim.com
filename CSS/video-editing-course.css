@@ -1,0 +1,595 @@
+/* ========================================= */
+/* VIDEO EDITING COURSE PAGE */
+/* ========================================= */
+
+.video-course-page{
+  width:100%;
+  overflow:hidden;
+}
+
+/* ========================================= */
+/* HERO SECTION */
+/* ========================================= */
+
+.video-hero{
+  position:relative;
+
+  min-height:100vh;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  padding:140px 7% 100px;
+
+  background:linear-gradient(
+    135deg,
+    #111827,
+    #7f1d1d,
+    #dc2626
+  );
+
+  overflow:hidden;
+}
+
+/* ========================================= */
+/* ANIMATED SHAPES */
+/* ========================================= */
+
+.video-shapes span{
+  position:absolute;
+
+  border-radius:50%;
+
+  background:rgba(248,113,113,0.15);
+
+  animation:floatAnimation 12s linear infinite;
+}
+
+.video-shapes span:nth-child(1){
+  width:250px;
+  height:250px;
+
+  top:5%;
+  left:5%;
+}
+
+.video-shapes span:nth-child(2){
+  width:320px;
+  height:320px;
+
+  bottom:-100px;
+  right:-100px;
+
+  animation-delay:3s;
+}
+
+.video-shapes span:nth-child(3){
+  width:120px;
+  height:120px;
+
+  top:60%;
+  left:40%;
+
+  animation-delay:5s;
+}
+
+.video-shapes span:nth-child(4){
+  width:180px;
+  height:180px;
+
+  top:20%;
+  right:30%;
+
+  animation-delay:2s;
+}
+
+/* Animation */
+
+@keyframes floatAnimation{
+
+  0%{
+    transform:translateY(0) rotate(0deg);
+  }
+
+  50%{
+    transform:translateY(-35px) rotate(180deg);
+  }
+
+  100%{
+    transform:translateY(0) rotate(360deg);
+  }
+
+}
+
+/* ========================================= */
+/* HERO CONTAINER */
+/* ========================================= */
+
+.video-hero-container{
+  display:grid;
+  grid-template-columns:1.2fr 1fr;
+
+  gap:60px;
+
+  align-items:center;
+
+  position:relative;
+  z-index:2;
+}
+
+/* ========================================= */
+/* HERO CONTENT */
+/* ========================================= */
+
+.course-badge{
+  display:inline-flex;
+  align-items:center;
+
+  gap:10px;
+
+  padding:12px 22px;
+
+  background:rgba(248,113,113,0.15);
+
+  border:1px solid rgba(248,113,113,0.3);
+
+  color:#fca5a5;
+
+  border-radius:50px;
+
+  margin-bottom:30px;
+}
+
+.video-content h1{
+  font-size:65px;
+
+  color:#fff;
+
+  line-height:1.2;
+
+  margin-bottom:25px;
+}
+
+.video-content h1 span{
+  color:#f87171;
+}
+
+.video-content p{
+  color:#e5e7eb;
+
+  font-size:18px;
+
+  line-height:1.9;
+
+  margin-bottom:35px;
+}
+
+/* ========================================= */
+/* HERO INFO */
+/* ========================================= */
+
+.hero-info{
+  display:flex;
+
+  gap:20px;
+
+  flex-wrap:wrap;
+
+  margin-bottom:40px;
+}
+
+.info-card{
+  display:flex;
+  align-items:center;
+
+  gap:15px;
+
+  background:rgba(255,255,255,0.05);
+
+  padding:18px 22px;
+
+  border-radius:18px;
+
+  border:1px solid rgba(255,255,255,0.08);
+}
+
+.info-card i{
+  font-size:24px;
+
+  color:#f87171;
+}
+
+.info-card h3{
+  color:#fff;
+
+  margin-bottom:5px;
+}
+
+.info-card p{
+  margin:0;
+
+  color:#d1d5db;
+
+  font-size:14px;
+}
+
+/* ========================================= */
+/* BUTTONS */
+/* ========================================= */
+
+.hero-buttons{
+  display:flex;
+
+  gap:20px;
+
+  flex-wrap:wrap;
+}
+
+.primary-btn,
+.secondary-btn{
+  padding:16px 35px;
+
+  border-radius:50px;
+
+  font-size:16px;
+
+  font-weight:600;
+
+  transition:0.4s ease;
+}
+
+.primary-btn{
+  background:#dc2626;
+
+  color:#fff;
+}
+
+.primary-btn:hover{
+  transform:translateY(-5px);
+
+  box-shadow:0 15px 30px rgba(220,38,38,0.25);
+}
+
+.secondary-btn{
+  border:2px solid #dc2626;
+
+  color:#fca5a5;
+}
+
+.secondary-btn:hover{
+  background:#dc2626;
+
+  color:#fff;
+}
+
+/* ========================================= */
+/* HERO IMAGE */
+/* ========================================= */
+
+.video-image img{
+  width:100%;
+
+  border-radius:25px;
+
+  box-shadow:0 25px 50px rgba(0,0,0,0.35);
+
+  animation:imageFloat 4s ease-in-out infinite;
+}
+
+@keyframes imageFloat{
+
+  0%{
+    transform:translateY(0);
+  }
+
+  50%{
+    transform:translateY(-12px);
+  }
+
+  100%{
+    transform:translateY(0);
+  }
+
+}
+
+/* ========================================= */
+/* SECTION TITLE */
+/* ========================================= */
+
+.section-title{
+  text-align:center;
+
+  margin-bottom:70px;
+}
+
+.section-title h2{
+  font-size:48px;
+
+  color:#111827;
+
+  margin-bottom:18px;
+}
+
+.section-title p{
+  color:#64748b;
+
+  font-size:18px;
+}
+
+/* ========================================= */
+/* FEATURES */
+/* ========================================= */
+
+.video-features{
+  padding:110px 7%;
+}
+
+.feature-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+
+  gap:30px;
+}
+
+.feature-card{
+  background:#fff;
+
+  padding:40px 30px;
+
+  text-align:center;
+
+  border-radius:25px;
+
+  transition:0.4s ease;
+
+  box-shadow:0 15px 35px rgba(0,0,0,0.08);
+}
+
+.feature-card:hover{
+  transform:translateY(-12px);
+}
+
+.feature-card i{
+  font-size:50px;
+
+  color:#dc2626;
+
+  margin-bottom:25px;
+}
+
+.feature-card h3{
+  color:#111827;
+
+  margin-bottom:15px;
+}
+
+.feature-card p{
+  color:#64748b;
+
+  line-height:1.8;
+}
+
+/* ========================================= */
+/* SOFTWARE SECTION */
+/* ========================================= */
+
+.software-section{
+  padding:110px 7%;
+
+  background:#fef2f2;
+}
+
+.software-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+
+  gap:30px;
+}
+
+.software-card{
+  background:#fff;
+
+  padding:40px;
+
+  text-align:center;
+
+  border-radius:25px;
+
+  transition:0.4s ease;
+
+  box-shadow:0 15px 35px rgba(0,0,0,0.08);
+}
+
+.software-card:hover{
+  transform:translateY(-10px);
+}
+
+.software-card i{
+  font-size:60px;
+
+  color:#dc2626;
+
+  margin-bottom:20px;
+}
+
+.software-card h3{
+  color:#111827;
+}
+
+/* ========================================= */
+/* CURRICULUM */
+/* ========================================= */
+
+.curriculum-section{
+  padding:110px 7%;
+}
+
+.curriculum-container{
+  display:flex;
+  flex-direction:column;
+
+  gap:25px;
+}
+
+.curriculum-box{
+  display:flex;
+  align-items:center;
+
+  gap:30px;
+
+  background:#fff;
+
+  padding:30px;
+
+  border-radius:22px;
+
+  transition:0.4s ease;
+
+  box-shadow:0 12px 30px rgba(0,0,0,0.08);
+}
+
+.curriculum-box:hover{
+  transform:translateX(10px);
+}
+
+.curriculum-box span{
+  min-width:70px;
+  height:70px;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  background:#dc2626;
+
+  color:#fff;
+
+  font-size:24px;
+
+  border-radius:50%;
+}
+
+.curriculum-box h3{
+  color:#111827;
+
+  margin-bottom:10px;
+}
+
+.curriculum-box p{
+  color:#64748b;
+
+  line-height:1.8;
+}
+
+/* ========================================= */
+/* CTA */
+/* ========================================= */
+
+.video-cta{
+  padding:110px 7%;
+
+  background:linear-gradient(
+    135deg,
+    #111827,
+    #7f1d1d,
+    #dc2626
+  );
+
+  text-align:center;
+}
+
+.cta-content h2{
+  color:#fff;
+
+  font-size:52px;
+
+  margin-bottom:20px;
+}
+
+.cta-content p{
+  color:#e5e7eb;
+
+  font-size:18px;
+
+  margin-bottom:35px;
+}
+
+/* ========================================= */
+/* RESPONSIVE */
+/* ========================================= */
+
+@media(max-width:1200px){
+
+  .feature-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+}
+
+@media(max-width:992px){
+
+  .video-hero-container{
+    grid-template-columns:1fr;
+  }
+
+  .video-content{
+    text-align:center;
+  }
+
+  .hero-info{
+    justify-content:center;
+  }
+
+  .hero-buttons{
+    justify-content:center;
+  }
+
+  .software-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .video-content h1{
+    font-size:52px;
+  }
+
+}
+
+@media(max-width:768px){
+
+  .section-title h2,
+  .cta-content h2{
+    font-size:38px;
+  }
+
+  .video-content h1{
+    font-size:42px;
+  }
+
+}
+
+@media(max-width:576px){
+
+  .feature-grid,
+  .software-grid{
+    grid-template-columns:1fr;
+  }
+
+  .video-content h1{
+    font-size:34px;
+  }
+
+  .primary-btn,
+  .secondary-btn{
+    width:100%;
+
+    text-align:center;
+  }
+
+  .curriculum-box{
+    flex-direction:column;
+
+    text-align:center;
+  }
+
+}
