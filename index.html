@@ -5,10 +5,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Bootstrap demo</title>
-  <!-- Bootstart CSS CDN Link  Start -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
-  <!-- Bootstart CSS CDN Link  Stop -->
+
   <!-- Font CDN Link  Start -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
@@ -16,240 +13,806 @@
   <!-- Font CDN Link  End -->
   <!-- Internal CSS Link Start  -->
   <link rel="stylesheet" href="/CSS/style.css">
+  <link rel="stylesheet" href="/CSS/navbar.css">
   <!-- Internal CSS Link Stop  -->
 </head>
 
 <body>
-  <!-- Navbar start here  -->
-  <div class="container-fluid navbar_bg_color">
-    <div class="container py-3">
-      <div class="row ">
-        <div class="col-lg-2">
-          <p class="text-light fs-3 m-0">AIIM</p>
-        </div>
-        <div class="col-lg-10 d-flex justify-content-end align-items-center">
-          <p class="px-4 m-0"><a href="#" class="text-decoration-none text-light">Home</a></p>
-          <p class="px-4 m-0"><a href="#" class="text-decoration-none text-light">About</a></p>
-          <p class="px-4 m-0 dropdown dropdown-toggle text-light position-relative" data-bs-toggle="dropdown"
-            title="click">Courses
-          <div class="dropdown-menu position-absolute top-0">
-            <a class="dropdown-item" href="#">Animation</a>
-            <a class="dropdown-item" href="#">Web Development</a>
-            <a class="dropdown-item" href="#">Python Programming</a>
-            <a class="dropdown-item" href="#">Graphics Design</a>
-            <a class="dropdown-item" href="#">Desktop Publishing</a>
-            <a class="dropdown-item" href="#">Basic Computer</a>
+  <!-- Navbar with megamenu final menu  -->
+
+<!-- ========================================= -->
+<!-- NAVBAR -->
+<!-- ========================================= -->
+
+<header class="navbar">
+
+  <!-- Logo -->
+  <a href="#" class="logo">
+
+    AIIM
+
+  </a>
+
+  <!-- Desktop Menu -->
+  <nav class="desktop-menu">
+
+    <ul class="nav-links">
+
+      <li><a href="#">Home</a></li>
+
+      <li><a href="#">About</a></li>
+
+      <!-- Mega Menu -->
+      <li class="mega-parent">
+
+        <a href="#">
+
+          Courses
+          <i class="fa-solid fa-angle-down"></i>
+
+        </a>
+
+        <!-- Mega Menu -->
+        <div class="mega-menu">
+
+          <!-- Column -->
+          <div class="mega-column">
+
+            <h3>Development</h3>
+
+            <a href="#">Web Development</a>
+            <a href="#">Frontend Development</a>
+            <a href="#">Backend Development</a>
+            <a href="#">Full Stack Development</a>
+
           </div>
-          </p>
-          <p class="px-4 m-0"><a href="#" class="text-decoration-none text-light">Portal</a></p>
-          <p class="px-4 m-0"><a href="#" class="text-decoration-none text-light">Contact</a></p>
+
+          <!-- Column -->
+          <div class="mega-column">
+
+            <h3>Designing</h3>
+
+            <a href="#">Graphic Design</a>
+            <a href="#">UI/UX Design</a>
+            <a href="#">Animation</a>
+            <a href="#">Video Editing</a>
+
+          </div>
+
+          <!-- Column -->
+          <div class="mega-column">
+
+            <h3>Programming</h3>
+
+            <a href="#">Python</a>
+            <a href="#">Java</a>
+            <a href="#">Data Science</a>
+            <a href="#">DSA</a>
+
+          </div>
+
+          <!-- Column -->
+          <div class="mega-column">
+
+            <h3>Networking</h3>
+
+            <a href="#">Cyber Security</a>
+            <a href="#">Cloud Computing</a>
+            <a href="#">Linux</a>
+            <a href="#">Hardware</a>
+
+          </div>
+
         </div>
-      </div>
+
+      </li>
+
+      <li><a href="#">Placements</a></li>
+
+      <li><a href="#">Contact</a></li>
+
+    </ul>
+
+  </nav>
+
+  <!-- Right Buttons -->
+  <div class="nav-right">
+
+    <a href="#" class="nav-btn">
+      Join Now
+    </a>
+
+    <!-- Mobile Menu Button -->
+    <div class="menu-btn" id="menuBtn">
+
+      <i class="fa-solid fa-bars"></i>
+
     </div>
+
   </div>
-  <!-- Navbar End Here  -->
 
-  <!-- Carousel part start here  -->
-  <div class="carousel slide" id="myslider" data-bs-ride="carousel">
-    <!-- Carousel indicators start here  -->
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#myslider" data-bs-slide-to="0" class="active" aria-current="true"
-        aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#myslider" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#myslider" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      <button type="button" data-bs-target="#myslider" data-bs-slide-to="3" aria-label="Slide 4"></button>
-      <button type="button" data-bs-target="#myslider" data-bs-slide-to="4" aria-label="Slide 5"></button>
-    </div>
-    <!-- Carousel indicators stop here  -->
+</header>
 
-    <!-- Carousel inner part start here  -->
-    <div class="carousel-inner">
-      <div class="carousel-item active" data-bs-interval="10000">
-        <img src="./Assets/Images/Advance-Excel-Hero-Banner.png" class="d-block w-100 image_brightness" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Advance Excel</h5>
-          <p>Advanced Excel uses tools like Pivot Tables, formulas, and macros to analyze and<br> automate data.
-            It helps in reporting, data visualization, and decision-making.</p>
-        </div>
-      </div>
-      <div class="carousel-item" data-bs-interval="2000">
-        <img src="./Assets/Images/Financial-Accounting-Hero-Banner.png" class="d-block w-100 image_brightness"
-          alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Financial Accounting</h5>
-          <p>Deals with recording and managing financial transactions of a business.
-            Helps <br>in preparing reports and ensuring financial accuracy.</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="./Assets/Images/Graphic-Design-Hero-B.png" class="d-block w-100 image_brightness" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Graphics Design</h5>
-          <p>Creates visual content like logos, posters, and social media designs.
-            <br> Uses tools and creativity to communicate ideas visually.
-          </p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="./Assets/Images/Hardware-Networking-Hero-Banner.png" class="d-block w-100 image_brightness" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Hardware and Networking</h5>
-          <p>Covers computer components and how devices connect to share data.
-            Includes <br>networking concepts like IP, routers, and system troubleshooting.</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="./Assets/Images/Web-Development-Hero-Banner.png" class="d-block w-100 image_brightness" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Web Development</h5>
-          <p>Involves building websites using HTML, CSS, JavaScript, and backend technologies.
-            Focuses<br> on creating interactive and functional web applications.</p>
-        </div>
-      </div>
-    </div>
-    <!-- Carousel inner part stop here  -->
 
-    <!-- Carousel next and previous button start here  -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#myslider" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon " aria-hidden="true"></span>
-      <span class="visually-hidden text-black">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#myslider" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-    <!-- Carousel next and previous button start here  -->
+<!-- ========================================= -->
+<!-- OFFCANVAS MENU -->
+<!-- ========================================= -->
+
+<div class="offcanvas-menu" id="offcanvasMenu">
+
+  <!-- Close Button -->
+  <div class="close-btn" id="closeBtn">
+
+    <i class="fa-solid fa-xmark"></i>
+
   </div>
-  <!-- Carousel part start here  -->
 
-  <!-- Our Vision and Misson start here  -->
-  <div class="container-fluid navbar_bg_color  pt-5">
+  <!-- Mobile Links -->
+  <ul class="mobile-links">
+
+    <li><a href="#">Home</a></li>
+
+    <li><a href="#">About</a></li>
+
+    <!-- Dropdown -->
+    <li class="mobile-dropdown">
+
+      <div class="dropdown-btn">
+
+        <span>Courses</span>
+
+        <i class="fa-solid fa-angle-down"></i>
+
+      </div>
+
+      <!-- Submenu -->
+      <div class="mobile-submenu">
+
+        <a href="#">Web Development</a>
+        <a href="#">Graphic Design</a>
+        <a href="#">Animation</a>
+        <a href="#">Video Editing</a>
+        <a href="#">Python</a>
+        <a href="#">Cyber Security</a>
+
+      </div>
+
+    </li>
+
+    <li><a href="#">Placements</a></li>
+
+    <li><a href="#">Contact</a></li>
+
+  </ul>
+
+</div>
+
+<!-- Overlay -->
+<div class="overlay" id="overlay"></div>
+  
+  <!-- Navbar with megamenu final menu end -->
+
+
+
+  <!-- ========================================= -->
+  <!-- Hero Section Start -->
+  <!-- ========================================= -->
+
+  <section class="hero-section">
+
+    <!-- Animated Background -->
+    <div class="hero-bg">
+
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+
+    </div>
+
+    <div class="hero-container">
+
+      <!-- Left Content -->
+      <div class="hero-content">
+
+        <h1>
+          Build Your Career With
+          <span>AIIM </span>
+        </h1>
+
+        <p>
+          Learn Web Development, Graphic Design,
+          Animation, Python, Hardware & Networking
+          with practical industry-level training.
+        </p>
+
+        <!-- Buttons -->
+        <div class="hero-buttons">
+
+          <a href="#" class="btn-primary">
+            Explore Courses
+          </a>
+
+          <a href="#" class="btn-secondary">
+            Contact Us
+          </a>
+
+        </div>
+
+        <!-- Stats -->
+        <div class="hero-stats">
+
+          <div class="stat-box">
+
+            <h2>5000+</h2>
+            <span>Students</span>
+
+          </div>
+
+          <div class="stat-box">
+
+            <h2>50+</h2>
+            <span>Courses</span>
+
+          </div>
+
+          <div class="stat-box">
+
+            <h2>100%</h2>
+            <span>Support</span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Right Image -->
+      <div class="hero-image">
+
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Student">
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ========================================= -->
+  <!-- Hero Section End -->
+  <!-- ========================================= -->
+
+
+
+  <!-- Meet our ceo start  -->
+  <div class="container-fluid">
+
     <div class="container">
-      <div class="row pt-4 pb-4">
-        <div class="col-lg-12 ">
-          <h1 class="text-light">About AIIM Computer Training Institute </h1>
-          <p class="text-light">AIIM Computer Training Institute is a leading center for professional computer education
-            and skill
-            development.<br>We specialize in Animation, Graphics Design, Web Development, and Hardware & Networking
-            courses.
-            Our programs focus on practical training,<br> modern tools, and industry-relevant skills.
-            We provide expert guidance and personalized support to make students job-ready.<br>
-            Join AIIM to build a successful career in today’s digital world.</p>
+      <section class="ceo-section">
+
+        <div class="ceo-container">
+
+          <!-- CEO Image -->
+          <div class="ceo-image">
+            <img src="https://i.pravatar.cc/500?img=15" alt="CEO">
+          </div>
+
+          <!-- CEO Content -->
+          <div class="ceo-content">
+
+            <h4>Meet Our CEO & Founder</h4>
+
+            <h2>Debrabrata Mukherjee</h2>
+
+            <p>
+              Debrabrata Mukherjee is the visionary founder and CEO of our institute.
+              With years of experience in technology, education, and leadership,
+              he is dedicated to helping students build successful careers in the IT industry.
+            </p>
+
+            <p>
+              His mission is to provide quality education, practical knowledge,
+              and industry-level training that empowers students for the future.
+            </p>
+
+            <a href="#">Read More</a>
+
+          </div>
+
         </div>
-      </div>
-      <div class="row py-4 ">
-        <div class="col-lg-3">
-          <p class="text-center"><i class="fa-solid fa-graduation-cap card_icon"></i></p>
-          <p class="text-center text-light font_size">Our Vission</p>
-          <p class="text-center text-light">To be a leading computer training institute known for quality education and
-            innovation.
-            We aim to empower students with practical skills for a successful career in technology.</p>
-        </div>
-        <div class="col-lg-3">
-          <p class="text-center"><i class="fa-solid fa-graduation-cap card_icon"></i></p>
-          <p class="text-center text-light font_size">Our Mission</p>
-          <p class="text-center text-light">To deliver industry-oriented training with hands-on experience and expert
-            guidance.
-            We focus on building strong technical foundations and improving employability.</p>
-        </div>
-        <div class="col-lg-3">
-          <p class="text-center"><i class="fa-solid fa-graduation-cap card_icon"></i></p>
-          <p class="text-center text-light font_size">Our Strength</p>
-          <p class="text-center text-light">Our strength lies in experienced faculty, practical learning, and updated
-            curriculum.
-            We emphasize real-world projects, personalized support, and student success.</p>
-        </div>
-        <div class="col-lg-3">
-          <p class="text-center"><i class="fa-solid fa-graduation-cap card_icon"></i></p>
-          <p class="text-center text-light font_size">Our Quality</p>
-          <p class="text-center text-light">We maintain high standards of training using modern tools and teaching
-            methods.
-            Our commitment ensures consistent quality, excellence, and student satisfaction.</p>
-        </div>
-      </div>
+
+      </section>
     </div>
   </div>
-  <!-- Our Vision and Misson stop here  -->
 
-  <!-- Our Popular Courses start Here  -->
-  <div class="container-fluid mt-4">
+
+
+
+  <!-- Meet our ceo end  -->
+  <!-- Our teachers section start  -->
+  <div class="container-fluid">
+    <div class="comtainer">
+      <section class="teachers-section">
+
+        <div class="section-title">
+          <h2>Meet Our Teachers</h2>
+          <p>Learn from experienced and professional mentors</p>
+        </div>
+
+        <div class="teachers-container">
+
+          <!-- Teacher Card -->
+          <div class="teacher-card">
+
+            <div class="teacher-image">
+              <img src="https://i.pravatar.cc/300?img=12" alt="Teacher">
+            </div>
+
+            <div class="teacher-content">
+              <h3>John Anderson</h3>
+              <span>Web Development Trainer</span>
+
+              <p>
+                Expert in HTML, CSS, JavaScript, React, and modern frontend development.
+              </p>
+
+              <div class="social-icons">
+                <a href="#">Facebook</a>
+                <a href="#">LinkedIn</a>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Teacher Card -->
+          <div class="teacher-card">
+
+            <div class="teacher-image">
+              <img src="https://i.pravatar.cc/300?img=32" alt="Teacher">
+            </div>
+
+            <div class="teacher-content">
+              <h3>Sarah Williams</h3>
+              <span>UI/UX Designer</span>
+
+              <p>
+                Professional designer with experience in Figma, Adobe XD, and branding.
+              </p>
+
+              <div class="social-icons">
+                <a href="#">Facebook</a>
+                <a href="#">LinkedIn</a>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Teacher Card -->
+          <div class="teacher-card">
+
+            <div class="teacher-image">
+              <img src="https://i.pravatar.cc/300?img=45" alt="Teacher">
+            </div>
+
+            <div class="teacher-content">
+              <h3>Michael Lee</h3>
+              <span>Backend Developer</span>
+
+              <p>
+                Specialized in PHP, MySQL, Node.js, database management, and APIs.
+              </p>
+
+              <div class="social-icons">
+                <a href="#">Facebook</a>
+                <a href="#">LinkedIn</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- Our teachers section end  -->
+
+  <!-- Testimonials sections start here  -->
+
+  <div class="container-fluid">
     <div class="container">
-      <div class="row">
+      <section class="testimonials">
 
-        <!-- LEFT MENU -->
-        <div class="col-4">
-          <div id="Popular_Courses" class="list-group">
-            <a class="list-group-item list-group-item-action" href="#web-development">Web Development</a>
-            <a class="list-group-item list-group-item-action" href="#graphics-design">Graphics Design</a>
-            <a class="list-group-item list-group-item-action" href="#animation">Animation</a>
-            <a class="list-group-item list-group-item-action" href="#hardware-networking">Hardware & Networking</a>
-            <a class="list-group-item list-group-item-action" href="#excel">Advance Excel</a>
-            <a class="list-group-item list-group-item-action" href="#tally">Tally | GST </a>
-            <a class="list-group-item list-group-item-action" href="#python">Python Programming</a>
-          </div>
+        <div class="section-title">
+          <h2>What Our Clients Say</h2>
+          <p>Real feedback from our happy customers</p>
         </div>
 
-        <!-- RIGHT CONTENT -->
-        <div class="col-8">
-          <div data-bs-spy="scroll" data-bs-target="#Popular_Courses" data-bs-smooth-scroll="true"
-            class="scrollspy-example" tabindex="0">
+        <div class="testimonial-container">
 
-            <h4 id="web-development">Web Development</h4>
-            <p>
-              Web Development is the process of creating and maintaining websites and web applications.
-              It includes front-end design using HTML, CSS, and JavaScript, and back-end development with server-side
-              technologies.
-              The goal is to build responsive, user-friendly, and functional websites.
-              <a href="#">
-                <img
-                  src="https://static.vecteezy.com/system/resources/thumbnails/072/929/774/small/a-finger-touches-a-digital-screen-displaying-a-web-development-interface-with-icons-representing-coding-cloud-computing-database-and-website-design-symbolizing-innovation-and-technological-advancement-photo.jpg"
-                  alt="">
-              </a>
+          <!-- Card 1 -->
+          <div class="testimonial-card">
+            <div class="quote">“</div>
+
+            <p class="testimonial-text">
+              This company provided excellent service and the website design was amazing.
+              Highly recommended for modern responsive websites.
             </p>
 
-            <h4 id="graphics-design">Graphics Design</h4>
-            <p>
-              Graphics Design is the art of creating visual content to communicate ideas effectively.
-              It includes logos, posters, and branding materials using modern tools.
-            </p>
+            <div class="user">
+              <img src="https://i.pravatar.cc/100?img=1" alt="User">
 
-            <h4 id="animation">Animation</h4>
-            <p>
-              Animation involves creating motion graphics, videos, and visual effects.
-              It is widely used in films, advertising, and digital media.
-            </p>
+              <div class="user-info">
+                <h3>Alex Johnson</h3>
+                <span>Web Designer</span>
+              </div>
+            </div>
 
-            <h4 id="hardware-networking">Hardware & Networking</h4>
-            <p>
-              Covers computer hardware, networking concepts, and system management.
-              Includes routers, IP addressing, and troubleshooting.
-
-            </p>
-
-            <h4 id="excel">Advance Excel</h4>
-            <p>
-              Covers computer hardware, networking concepts, and system management.
-              Includes routers, IP addressing, and troubleshooting.
-            </p>
-
-            <h4 id="tally">Tally | GST </h4>
-            <p>
-              Covers computer hardware, networking concepts, and system management.
-              Includes routers, IP addressing, and troubleshooting.
-            </p>
-            <h4 id="python">Python Programmimg</h4>
-            <p>
-              Covers computer hardware, networking concepts, and system management.
-              Includes routers, IP addressing, and troubleshooting.
-            </p>
+            <div class="stars">
+              ★★★★★
+            </div>
           </div>
+
+          <!-- Card 2 -->
+          <div class="testimonial-card">
+            <div class="quote">“</div>
+
+            <p class="testimonial-text">
+              Professional team with excellent support. The UI/UX quality exceeded my expectations.
+            </p>
+
+            <div class="user">
+              <img src="https://i.pravatar.cc/100?img=5" alt="User">
+
+              <div class="user-info">
+                <h3>Sophia Miller</h3>
+                <span>Frontend Developer</span>
+              </div>
+            </div>
+
+            <div class="stars">
+              ★★★★★
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="testimonial-card">
+            <div class="quote">“</div>
+
+            <p class="testimonial-text">
+              Fast delivery, clean code, and fully responsive design. Great experience working together.
+            </p>
+
+            <div class="user">
+              <img src="https://i.pravatar.cc/100?img=8" alt="User">
+
+              <div class="user-info">
+                <h3>Michael Lee</h3>
+                <span>Business Owner</span>
+              </div>
+            </div>
+
+            <div class="stars">
+              ★★★★★
+            </div>
+          </div>
+
         </div>
 
-      </div>
+      </section>
+
     </div>
   </div>
+  <!-- Testimonials sections stop here  -->
+
+  <!-- Our students placed in start  -->
+  <div class="container-fluid">
+    <div class="container">
+      <section class="placement-section">
+
+        <div class="section-title">
+          <h2>Our Students Placed In Various Companies</h2>
+          <p>Students successfully working in top companies around the world</p>
+        </div>
+
+        <div class="company-container">
+
+          <!-- Company Card -->
+          <div class="company-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google">
+
+            <h3>Google</h3>
+
+            <p>12 Students Placed</p>
+          </div>
+
+          <!-- Company Card -->
+          <div class="company-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon">
+
+            <h3>Amazon</h3>
+
+            <p>18 Students Placed</p>
+          </div>
+
+          <!-- Company Card -->
+          <div class="company-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" alt="IBM">
+
+            <h3>IBM</h3>
+
+            <p>10 Students Placed</p>
+          </div>
+
+          <!-- Company Card -->
+          <div class="company-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft">
+
+            <h3>Microsoft</h3>
+
+            <p>15 Students Placed</p>
+          </div>
+
+          <!-- Company Card -->
+          <div class="company-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple">
+
+            <h3>Apple</h3>
+
+            <p>8 Students Placed</p>
+          </div>
+
+          <!-- Company Card -->
+          <div class="company-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix">
+
+            <h3>Netflix</h3>
+
+            <p>6 Students Placed</p>
+          </div>
+
+        </div>
+
+      </section>
+    </div>
+  </div>
+  <!-- Our students placed in stop  -->
+
+
+<!-- ========================================= -->
+<!-- FAQ SECTION -->
+<!-- ========================================= -->
+
+<section class="faq-section">
+
+  <!-- Bubble Animation -->
+  <div class="faq-bubbles">
+
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+
+  </div>
+
+  <!-- Heading -->
+  <div class="faq-heading">
+
+    <h2>Frequently Asked Questions</h2>
+
+    <p>
+      Find answers to common questions about AIIM Institute
+    </p>
+
+  </div>
+
+  <!-- FAQ Container -->
+  <div class="faq-container">
+
+    <!-- FAQ Item -->
+    <details class="faq-item">
+
+      <summary>
+
+        What courses are available at AIIM?
+
+        <i class="fa-solid fa-plus"></i>
+
+      </summary>
+
+      <p>
+        AIIM offers Web Development, Graphic Design,
+        Animation, Video Editing, Programming,
+        Cyber Security and many more professional courses.
+      </p>
+
+    </details>
+
+    <!-- FAQ Item -->
+    <details class="faq-item">
+
+      <summary>
+
+        Are classes available online?
+
+        <i class="fa-solid fa-plus"></i>
+
+      </summary>
+
+      <p>
+        Yes, AIIM provides both online and offline
+        classes with flexible timings.
+      </p>
+
+    </details>
+
+    <!-- FAQ Item -->
+    <details class="faq-item">
+
+      <summary>
+
+        Do you provide placement support?
+
+        <i class="fa-solid fa-plus"></i>
+
+      </summary>
+
+      <p>
+        Yes, we provide placement assistance,
+        interview preparation and career guidance.
+      </p>
+
+    </details>
+
+    <!-- FAQ Item -->
+    <details class="faq-item">
+
+      <summary>
+
+        Can beginners join the courses?
+
+        <i class="fa-solid fa-plus"></i>
+
+      </summary>
+
+      <p>
+        Absolutely. Our courses are beginner-friendly
+        and designed for students from all backgrounds.
+      </p>
+
+    </details>
+
+  </div>
+
+</section>
+<!-- FAQ END HERE  -->
+
+
+
+
+
+<!-- ========================================= -->
+<!-- FOOTER SECTION -->
+<!-- ========================================= -->
+
+<footer class="footer">
+
+  <div class="footer-container">
+
+    <!-- About -->
+    <div class="footer-box">
+
+      <h2>AIIM</h2>
+
+      <p>
+        AIIM is a modern computer training institute offering
+        professional courses in development, designing,
+        animation and programming.
+      </p>
+
+      <!-- Social Icons -->
+      <div class="social-icons">
+
+        <a href="#">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+
+        <a href="#">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a href="#">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+
+        <a href="#">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+
+      </div>
+
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-box">
+
+      <h3>Quick Links</h3>
+
+      <ul>
+
+        <li><a href="#">Home</a></li>
+
+        <li><a href="#">About</a></li>
+
+        <li><a href="#">Courses</a></li>
+
+        <li><a href="#">Placements</a></li>
+
+        <li><a href="#">Contact</a></li>
+
+      </ul>
+
+    </div>
+
+    <!-- Courses -->
+    <div class="footer-box">
+
+      <h3>Popular Courses</h3>
+
+      <ul>
+
+        <li><a href="#">Web Development</a></li>
+
+        <li><a href="#">Graphic Design</a></li>
+
+        <li><a href="#">Animation</a></li>
+
+        <li><a href="#">Video Editing</a></li>
+
+        <li><a href="#">Python Programming</a></li>
+
+      </ul>
+
+    </div>
+
+    <!-- Contact Info -->
+    <div class="footer-box">
+
+      <h3>Contact Info</h3>
+
+      <p>
+        <i class="fa-solid fa-location-dot"></i>
+        Kolkata, India
+      </p>
+
+      <p>
+        <i class="fa-solid fa-phone"></i>
+        +91 9876543210
+      </p>
+
+      <p>
+        <i class="fa-solid fa-envelope"></i>
+        info@aiim.com
+      </p>
+
+    </div>
+
+  </div>
+
+  <!-- Footer Bottom -->
+  <div class="footer-bottom">
+
+    <p>
+      © 2026 AIIM Institute | All Rights Reserved
+    </p>
+
+  </div>
+
+</footer>
+
+  <!-- Footer Section stop  here  -->
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="/JavaScript/navbar.js"></script>
+<script src="/JavaScript/script.js"></script>
 
 </html>

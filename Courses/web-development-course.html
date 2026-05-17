@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/CSS/navbar.css">
+</head>
+<body>
+  <!-- ========================================= -->
+<!-- NAVBAR -->
+<!-- ========================================= -->
+
+<header class="navbar">
+
+  <!-- Logo -->
+  <a href="#" class="logo">
+
+    AIIM
+
+  </a>
+
+  <!-- Desktop Menu -->
+  <nav class="desktop-menu">
+
+    <ul class="nav-links">
+
+      <li><a href="#">Home</a></li>
+
+      <li><a href="#">About</a></li>
+
+      <!-- Mega Menu -->
+      <li class="mega-parent">
+
+        <a href="#">
+
+          Courses
+          <i class="fa-solid fa-angle-down"></i>
+
+        </a>
+
+        <!-- Mega Menu -->
+        <div class="mega-menu">
+
+          <!-- Column -->
+          <div class="mega-column">
+
+            <h3>Development</h3>
+
+            <a href="#">Web Development</a>
+            <a href="#">Frontend Development</a>
+            <a href="#">Backend Development</a>
+            <a href="#">Full Stack Development</a>
+
+          </div>
+
+          <!-- Column -->
+          <div class="mega-column">
+
+            <h3>Designing</h3>
+
+            <a href="#">Graphic Design</a>
+            <a href="#">UI/UX Design</a>
+            <a href="#">Animation</a>
+            <a href="#">Video Editing</a>
+
+          </div>
+
+          <!-- Column -->
+          <div class="mega-column">
+
+            <h3>Programming</h3>
+
+            <a href="#">Python</a>
+            <a href="#">Java</a>
+            <a href="#">Data Science</a>
+            <a href="#">DSA</a>
+
+          </div>
+
+          <!-- Column -->
+          <div class="mega-column">
+
+            <h3>Networking</h3>
+
+            <a href="#">Cyber Security</a>
+            <a href="#">Cloud Computing</a>
+            <a href="#">Linux</a>
+            <a href="#">Hardware</a>
+
+          </div>
+
+        </div>
+
+      </li>
+
+      <li><a href="#">Placements</a></li>
+
+      <li><a href="#">Contact</a></li>
+
+    </ul>
+
+  </nav>
+
+  <!-- Right Buttons -->
+  <div class="nav-right">
+
+    <a href="#" class="nav-btn">
+      Join Now
+    </a>
+
+    <!-- Mobile Menu Button -->
+    <div class="menu-btn" id="menuBtn">
+
+      <i class="fa-solid fa-bars"></i>
+
+    </div>
+
+  </div>
+
+</header>
+
+
+<!-- ========================================= -->
+<!-- OFFCANVAS MENU -->
+<!-- ========================================= -->
+
+<div class="offcanvas-menu" id="offcanvasMenu">
+
+  <!-- Close Button -->
+  <div class="close-btn" id="closeBtn">
+
+    <i class="fa-solid fa-xmark"></i>
+
+  </div>
+
+  <!-- Mobile Links -->
+  <ul class="mobile-links">
+
+    <li><a href="#">Home</a></li>
+
+    <li><a href="#">About</a></li>
+
+    <!-- Dropdown -->
+    <li class="mobile-dropdown">
+
+      <div class="dropdown-btn">
+
+        <span>Courses</span>
+
+        <i class="fa-solid fa-angle-down"></i>
+
+      </div>
+
+      <!-- Submenu -->
+      <div class="mobile-submenu">
+
+        <a href="#">Web Development</a>
+        <a href="#">Graphic Design</a>
+        <a href="#">Animation</a>
+        <a href="#">Video Editing</a>
+        <a href="#">Python</a>
+        <a href="#">Cyber Security</a>
+
+      </div>
+
+    </li>
+
+    <li><a href="#">Placements</a></li>
+
+    <li><a href="#">Contact</a></li>
+
+  </ul>
+
+</div>
+
+<!-- Overlay -->
+<div class="overlay" id="overlay"></div>
+  
+  <!-- Navbar with megamenu final menu end -->
+
+
+
+</body>
+<script src="/JavaScript/navbar.js"></script>
+</html>
