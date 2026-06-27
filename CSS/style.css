@@ -1844,3 +1844,10 @@ body {
 
 }
 /* FAQ END HERE  */
+
+
+/*Extra CSS*/
+.hero_right_icon{
+  width: 200px;
+  height: 250px;
+}
